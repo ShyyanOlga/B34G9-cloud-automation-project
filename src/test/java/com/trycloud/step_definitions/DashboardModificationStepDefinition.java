@@ -3,6 +3,7 @@ package com.trycloud.step_definitions;
 import com.trycloud.pages.DashboardModificationPage;
 import com.trycloud.utilities.BrowserUtils;
 import com.trycloud.utilities.Driver;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -28,19 +29,25 @@ public class DashboardModificationStepDefinition {
         dashboardModificationPage.getDataIdValue("data-id");
 
         Assert.assertEquals(expectedModules,actualModules);
+
     }
 
-    @When("Click user icon")
-    public void click_user_icon() {
+    @When("Click user icon onthe dashboard page")
+    public void clickUserIconOntheDashboardPage() {
+
         BrowserUtils.waitForClickablility(dashboardModificationPage.userIcon, 10);
         dashboardModificationPage.userIcon.click();
-    }
-    @When("Dropdown menu appeared")
-    public void dropdown_menu_appeared() {
-        BrowserUtils.waitForVisibility(dashboardModificationPage.dropdownMenu,10);
-        dashboardModificationPage.dropdownMenu.isDisplayed();
+
 
     }
+
+
+    @And("Dropdown menu appeared on the dashboard page")
+    public void dropdownMenuAppearedOnTheDashboardPage() {
+        BrowserUtils.waitForVisibility(dashboardModificationPage.dropdownMenu,10);
+        dashboardModificationPage.dropdownMenu.isDisplayed();
+    }
+
     @Then("See user name displayed")
     public void see_user_name_displayed() {
         BrowserUtils.waitForVisibility(dashboardModificationPage.userNameDisplayed,10);
@@ -264,6 +271,10 @@ dashboardModificationPage.waitForVisibilityOfAllWidgetsSelected(dashboardModific
         Assert.assertTrue(dashboardModificationPage.vacationingStatusIsSelected.isDisplayed());
 
     }
+
+
+
+
 
 /*
     @Then("Unselect all Widgets if selected")

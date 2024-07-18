@@ -2,6 +2,7 @@ package com.trycloud.step_definitions;
 
 import com.trycloud.pages.ProfileSettingsPage;
 import com.trycloud.utilities.BrowserUtils;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -11,11 +12,16 @@ public class ProfileSettingsStepDefinition {
 
     ProfileSettingsPage profileSettingsPage = new ProfileSettingsPage();
 
+
+
     @When("Click user icon")
     public void click_user_icon() {
         BrowserUtils.waitForClickablility(profileSettingsPage.userIcon, 10);
         profileSettingsPage.userIcon.click();
+
     }
+
+
     @When("Dropdown menu appeared")
     public void dropdown_menu_appeared() {
         BrowserUtils.waitForVisibility(profileSettingsPage.dropDownMenuUnderUserIcon, 10);
