@@ -35,8 +35,8 @@ Feature: Default
 	
 	@B34G9-139
 	Scenario: Verify user can click on Online Status button and select Away Status options
-		        When Click user icon
-				And Dropdown menu appeared 
+		        When Click user icon onthe dashboard page
+				And Dropdown menu appeared on the dashboard page
 				When Click on the online status
 		        When Click Away
 				And Away is selected
@@ -49,8 +49,8 @@ Feature: Default
 	# stoped here take this tag
 	@B34G9-141
 	Scenario: Verify user can click on Online Status button and select Do not disturb Status options
-		        When Click user icon
-				And Dropdown menu appeared 
+		        When Click user icon onthe dashboard page
+				And Dropdown menu appeared on the dashboard page
 				When Click on the online status
 		        When Click Do not disturb
 				And Do not disturb status is selected
@@ -63,8 +63,8 @@ Feature: Default
 	
 	@B34G9-142
 	Scenario: Verify user can click on Online Status button and select Invisible Status options
-		        When Click user icon
-				And Dropdown menu appeared 
+		        When Click user icon onthe dashboard page
+				And Dropdown menu appeared on the dashboard page
 				When Click on the online status
 				When Click Invisible 
 				And Invisible status is selected
@@ -77,8 +77,8 @@ Feature: Default
 	
 	@B34G9-143
 	Scenario: Verify user can click on Set Status button and select In a meeting of the Status options
-				When Click user icon
-				And Dropdown menu appeared
+				When Click user icon onthe dashboard page
+				And Dropdown menu appeared on the dashboard page
 				When Click on the online status
 				When Click In a meeting
 				And Click Set status message
@@ -90,8 +90,8 @@ Feature: Default
 	
 	@B34G9-144
 	Scenario: Verify user can click on Set Status button and select Commuting of the Status options
-				When Click user icon
-				And Dropdown menu appeared
+				When Click user icon onthe dashboard page
+				And Dropdown menu appeared on the dashboard page
 				When Click on the online status
 				When Click Commuting
 				And Click Set status message
@@ -103,8 +103,8 @@ Feature: Default
 	
 	@B34G9-145
 	Scenario: Verify user can click on Set Status button and select Working remotely of the Status options
-				When Click user icon
-				And Dropdown menu appeared
+				When Click user icon onthe dashboard page
+				And Dropdown menu appeared on the dashboard page
 				When Click on the online status
 				When Click Working remotely
 				And Click Set status message
@@ -116,8 +116,8 @@ Feature: Default
 	
 	@B34G9-146
 	Scenario: Verify user can click on Set Status button and select Out sick of the Status options
-				When Click user icon
-				And Dropdown menu appeared
+				When Click user icon onthe dashboard page
+				And Dropdown menu appeared on the dashboard page
 				When Click on the online status
 				When Click Out sick
 				And Click Set status message
@@ -129,8 +129,8 @@ Feature: Default
 	
 	@B34G9-140
 	Scenario: Verify user can click on Online Status button and select Online Status options
-				When Click user icon
-				And Dropdown menu appeared 
+				When Click user icon onthe dashboard page
+				And Dropdown menu appeared on the dashboard page
 				When Click on the online status
 				When Click Online 
 				And Online status is selected
@@ -143,8 +143,8 @@ Feature: Default
 	
 	@B34G9-147
 	Scenario: Verify user can click on Set Status button and select Vacationing of the Status options
-				When Click user icon
-				And Dropdown menu appeared
+				When Click user icon onthe dashboard page
+				And Dropdown menu appeared on the dashboard page
 				When Click on the online status
 				When Click Vacationing
 				And Click Set status message
