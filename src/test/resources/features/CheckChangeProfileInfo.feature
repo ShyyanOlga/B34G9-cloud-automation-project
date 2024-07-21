@@ -1,5 +1,5 @@
 @B34G9-168
-Feature: Default
+Feature: Check and Change Profile Info Functionality
 
 	Background:
 		#@B34G9-116
